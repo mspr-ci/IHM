@@ -15,6 +15,8 @@
     "@angular/platform-browser": "8.2.14",
     "@angular/platform-browser-dynamic": "8.2.14",
     "@angular/router": "8.2.14",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@fortawesome/angular-fontawesome": "0.5.0",
     "@fortawesome/fontawesome-svg-core": "1.2.26",
     "@fortawesome/free-solid-svg-icons": "5.12.0",
@@ -60,7 +62,7 @@
     "copy-webpack-plugin": "5.1.1",
     "css-loader": "3.3.2",
     "cypress": "^4.0.2",
-    "eslint": "6.7.2",
+    "eslint": "^6.7.2",
     "eslint-config-jhipster": "0.0.1",
     "eslint-config-prettier": "6.7.0",
     "eslint-loader": "3.0.3",
@@ -70,7 +72,7 @@
     "generator-jhipster": "6.7.1",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
-    "husky": "3.1.0",
+    "husky": "^3.1.0",
     "jest": "24.9.0",
     "jest-date-mock": "1.0.7",
     "jest-junit": "10.0.0",
@@ -138,5 +140,25 @@
   "jestSonar": {
     "reportPath": "build/test-results/jest",
     "reportFile": "TESTS-results-sonar.xml"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E  HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        2,
+        "never",
+        [
+          "start-case",
+          "pascal-case"
+        ]
+      ]
+    }
   }
 }
