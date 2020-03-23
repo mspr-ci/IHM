@@ -70,6 +70,7 @@
     "fork-ts-checker-webpack-plugin": "3.1.1",
     "friendly-errors-webpack-plugin": "1.7.0",
     "generator-jhipster": "6.7.1",
+    "gulp": "^4.0.2",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
     "husky": "^3.1.0",
@@ -91,6 +92,7 @@
     "sass": "1.23.7",
     "sass-loader": "8.0.0",
     "simple-progress-webpack-plugin": "1.1.2",
+    "sonarqube-scanner": "^2.5.0",
     "style-loader": "1.0.1",
     "terser-webpack-plugin": "2.3.0",
     "thread-loader": "2.1.3",
@@ -135,7 +137,8 @@
     "webpack:prod": "npm run cleanup && npm run webpack:prod:main && npm run clean-www",
     "webpack:test": "npm run test",
     "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "webpack": "node node_modules/webpack/bin/webpack.js"
+    "webpack": "node node_modules/webpack/bin/webpack.js",
+    "sonarqube": "gulp sonar"
   },
   "jestSonar": {
     "reportPath": "build/test-results/jest",
