@@ -138,7 +138,8 @@
     "webpack:test": "npm run test",
     "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "webpack": "node node_modules/webpack/bin/webpack.js",
-    "sonarqube": "gulp sonar"
+    "sonarqube": "gulp sonar",
+    "rimraf": "node_modules/.bin/rimraf"
   },
   "jestSonar": {
     "reportPath": "build/test-results/jest",
