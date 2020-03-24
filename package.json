@@ -119,8 +119,8 @@
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "ngc": "ngc -p tsconfig-aot.json",
-    "cleanup": "rimraf build/resources/main/static/ build/resources/main/aot",
-    "clean-www": "rimraf build/resources/main/static/app/{src,build/}",
+    "cleanup": "node_modules/.bin/rimraf build/resources/main/static/ build/resources/main/aot",
+    "clean-www": "node_modules/.bin/rimraf build/resources/main/static/app/{src,build/}",
     "e2e": "protractor test/protractor.conf.js",
     "postinstall": "node node_modules/protractor/bin/webdriver-manager update --gecko false",
     "start": "npm run webpack:dev",
@@ -138,8 +138,7 @@
     "webpack:test": "npm run test",
     "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "webpack": "node node_modules/webpack/bin/webpack.js",
-    "sonarqube": "gulp sonar",
-    "rimraf": "node_modules/.bin/rimraf"
+    "sonarqube": "gulp sonar"
   },
   "jestSonar": {
     "reportPath": "build/test-results/jest",
