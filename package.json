@@ -40,7 +40,7 @@
     "@angular/compiler-cli": "8.2.14",
     "@ngtools/webpack": "8.3.25",
     "@openapitools/openapi-generator-cli": "1.0.10-4.2.3",
-    "@types/chai": "4.2.7",
+    "@types/chai": "4.2.11",
     "@types/chai-string": "1.4.2",
     "@types/jest": "24.9.1",
     "@types/mocha": "5.2.7",
