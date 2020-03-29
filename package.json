@@ -23,6 +23,7 @@
     "@ng-bootstrap/ng-bootstrap": "5.1.4",
     "@ngx-translate/core": "11.0.1",
     "@ngx-translate/http-loader": "4.0.0",
+    "auto-changelog": "^1.16.3",
     "bootstrap": "4.4.1",
     "core-js": "3.5.0",
     "moment": "2.24.0",
@@ -92,7 +93,7 @@
     "sass": "1.23.7",
     "sass-loader": "8.0.0",
     "simple-progress-webpack-plugin": "1.1.2",
-    "sonarqube-scanner": "2.5.0",
+    "sonarqube-scanner": "2.6.0",
     "style-loader": "1.0.1",
     "terser-webpack-plugin": "2.3.0",
     "thread-loader": "2.1.3",
@@ -138,7 +139,8 @@
     "webpack:test": "npm run test",
     "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "webpack": "node node_modules/webpack/bin/webpack.js",
-    "sonarqube": "gulp sonar"
+    "sonarqube": "gulp sonar",
+    "changelog": "auto-changelog -p && git add CHANGELOG.md"
   },
   "jestSonar": {
     "reportPath": "build/test-results/jest",
