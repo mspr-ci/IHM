@@ -1,6 +1,6 @@
 {
   "name": "mspr-ci-application",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Description for msprCiApplication",
   "license": "UNLICENSED",
   "cacheDirectories": [
