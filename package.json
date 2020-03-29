@@ -93,7 +93,7 @@
     "sass": "1.23.7",
     "sass-loader": "8.0.0",
     "simple-progress-webpack-plugin": "1.1.2",
-    "sonarqube-scanner": "2.5.0",
+    "sonarqube-scanner": "2.6.0",
     "style-loader": "1.0.1",
     "terser-webpack-plugin": "2.3.0",
     "thread-loader": "2.1.3",
