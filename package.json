@@ -2,7 +2,6 @@
   "name": "mspr-ci-application",
   "version": "0.0.1-SNAPSHOT",
   "description": "Description for msprCiApplication",
-  "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [
     "node_modules"
